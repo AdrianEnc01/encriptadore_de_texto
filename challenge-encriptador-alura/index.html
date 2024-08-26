@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Style/style.css">
+
+</head>
+
+<body >
+    <header>
+        <img class="alura__logo" src= "imagenes/Logo.png" alt="logotipo__alura">
+    </header>
+<main>
+    <aside>
+        <div class="contenedor__mensaje">
+            <img class=robot src="imagenes/dibujo.png" alt="robot asomandose">
+            <img class="robot__oculto" src="assets/encriptado.png" style="display:none;">
+            <h3 class="titulo_mensaje">Ningún mensaje fue encontrado</h3>
+            <p class="parrafo_mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <button class="boton__copiar">Copiar</button> 
+    </aside>
+
+    <form class="formulario">
+        <textarea class="formulario__texto" placeholder="ingrese su texto aquí"></textarea>
+        <div class="contenedor__alert">
+            <div class="alert__mensaje"><img src="imagenes/exclamacion.png" alt="signo admiracion"><span>Solo letras minúsculas y sin acentos</span></div>
+        </div>
+
+        <div class="boton__container">
+            <button class="boton__encriptar">Encriptar</button>
+            <button class="boton__desencriptar">Desencriptar</button>
+        </div>
+    </form>
+    </main>
+    <footer>Todos los derechos reservados | &copy; <em id="date"></em>Adrian Encarnacion Mendez
+        <div id="iconos" class="col-xs-12">        
+            <a href="https://github.com/AdrianEnc01"><img src="imagenes/icons8-github-48.png" class="icono-social"></a>
+            <a href="https://www.linkedin.com/in/adrian-miguel-encarnacion-mendez-web-dev"><img src="imagenes/icons8-linkedin-48.png" class="icono-social"></a>
+    </div>
+    </footer>
+    
+<script src="app.js"></script>
+</body>
+</html>

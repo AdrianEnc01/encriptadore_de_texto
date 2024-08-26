@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --colortexto: aliceblue;
+    --fuenteinter: "Inter", sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    color: var(--colortexto);
+    font-family: var(--fuenteinter);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 2rem auto;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 8rem;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+aside {
+    margin-right: 2rem;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    width: 85vw;
+    max-width: 577px;
+}
+
+.formulario__texto {
+    width: 100%;
+    border: none;
+    background-color: #E5E5E5;
+    outline: none;
+    height: 50vh;
+    padding: 4rem;
+    font-size: 3.2rem;
+    color: #0A3871;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.alert__mensaje {
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.boton__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin:0;
+
+  }
+
+  .boton__encriptar:hover,
+  .boton__desencriptar:hover {
+      background-color: #052051; /* Cambia a un color más oscuro al pasar el mouse */
+  }
+
+.boton__encriptar, .boton__desencriptar{
+    width: 100%;
+    max-width: 260px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: var(--colortexto);
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.boton__copiar:hover {
+    background-color: #052051; /* Cambia a un color más oscuro al pasar el mouse */
+}
+
+.boton__copiar {
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color:  #0A3871;
+    color: var(--colortexto);
+    padding: 1rem 2rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contenedor__mensaje {
+    background-color: #ffffff;
+    gap: 10rem;
+    height: 60vh;
+    border-radius: 32px;
+    max-width: 35rem;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.titulo_mensaje {
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.parrafo_mensaje {
+    color: #495057;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color:  #E5E5E5; 
+    color: #052051; 
+    text-align: center; 
+    font-size: 1.5rem;
+}
+
+
+#iconos {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+#iconos img {
+    display: block; /* Hace que las imágenes se comporten como elementos de bloque */
+    transition: transform 0.3s; /* Añade una transición suave al efecto hover */
+}
+
+/* Efecto hover para las imágenes */
+#iconos img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de las imágenes al pasar el ratón por encima */
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    header,
+    .formulario,
+    .contenedor__mensaje {
+        width: 90%;
+    }
+
+    .formulario__texto {
+        height: 40vh;
+        padding: 2rem;
+        font-size: 2.8rem;
+    }
+
+    .boton__encriptar,
+    .boton__desencriptar,
+    .boton__copiar {
+        width: 90%;
+        height: 50px;
+        margin: 0.5rem 0;
+    }
+
+    .robot {
+        width: 200px;
+        height: 250px;
+    }
+}
